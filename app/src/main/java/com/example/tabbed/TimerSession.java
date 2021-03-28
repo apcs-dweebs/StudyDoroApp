@@ -2,15 +2,10 @@ package com.example.tabbed;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
-
-import android.app.Activity;
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import android.os.CountDownTimer;
-import android.os.Handler;
 import android.view.View;
 
 import android.view.inputmethod.InputMethodManager;
@@ -19,9 +14,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.lang.ref.WeakReference;
 import java.util.Locale;
-import java.util.Timer;
 
 public class TimerSession extends AppCompatActivity {
     private EditText mEditTextInput;
@@ -41,7 +34,7 @@ public class TimerSession extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_timer_session);
         setTitle("Start New Study Session");
-        mEditTextInput = findViewById(R.id.time_input);
+        mEditTextInput = findViewById(R.id.time_header);
         mTextViewCountDown = findViewById(R.id.countdown);
         mButtonSet = findViewById(R.id.set_timer);
         mButtonStartPause = findViewById(R.id.countdownBtn);
