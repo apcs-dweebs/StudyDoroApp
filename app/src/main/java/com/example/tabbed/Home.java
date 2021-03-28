@@ -15,7 +15,6 @@ public class Home extends Fragment {
   //  TextView text = (TextView) getActivity().findViewById(R.id.text);
   // LinearLayout layout = (LinearLayout) getActivity().findViewById(R.id.layout);
 public Home(){
-
 }
     @Nullable
     @Override
@@ -25,7 +24,4 @@ public Home(){
         return inflater.inflate(R.layout.fragment_home, container, false);
     }
 
-   /* public void launchTimer(View v){
-    TimerSession.setTimer(1, text);
-    }*/
 }

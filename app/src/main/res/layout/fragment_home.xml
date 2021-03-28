@@ -12,16 +12,15 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/launchTimer"
+            android:id="@+id/nothing"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="launchTimer"
-            android:text="timer" />
+            android:text="something" />
 
         <TextView
             android:id="@+id/text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:text="hi" />
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>
