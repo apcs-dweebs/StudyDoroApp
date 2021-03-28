@@ -1,3 +1,3 @@
 # StudyDoroApp
 an app we made
- 
+ For the Diamonds Hacks Hackathon our team decided to create an app based off of animeDoro by Josh Chen. This works similar to pomodoro which has a 25 minute study session and a 5 minute break but showDoro instead takes the concepts of animeDoro and has a 50 minute study session and a 20 minute break. This 20 minute break is for you to watch any show with 20 minute episodes or maybe just do something that is a reward to you within the 20 minutes. With this being a relatively new concept, there are little to no timers that work similar to ours. Now it is time to tour the app and show you all its features:
