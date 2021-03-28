@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -33,9 +34,11 @@ public class AddGoal extends AppCompatActivity {
         createGoal(name, time, importance);
     }
     public void createGoal(String currentName, String currentTime, String currentImportance) {
+        Toast.makeText(AddGoal.this, "Goal Added", Toast.LENGTH_SHORT).show();
         int time = Integer.parseInt(currentTime);
         int importance = Integer.parseInt(currentImportance);
         goals.add(new Goals(importance, time, currentName));
+
     }
 
 

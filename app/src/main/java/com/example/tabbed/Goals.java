@@ -3,7 +3,10 @@ package com.example.tabbed;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -74,6 +77,19 @@ public class Goals extends Fragment {
         Intent i = new Intent(getActivity(), AddGoal.class);
         //  i.putExtra("goals arrayList", goals);
         startActivity(i);
+    }
+    public void goToAllGoals(View v) {
+        Intent i = new Intent(getActivity(), AllGoals.class);
+        startActivity(i);
+    }
+
+    public void finishedGoal(){
+        for (int i = 0; i < goals.size(); i++)
+        {
+            System.out.println(i + "# Is it finished? (true/false)");
+           // boolean ni = kbd.nextBoolean();
+            ture.add(false);
+        }
     }
   /*  public static void createGoal(String currentName, String currentTime, String currentImportance) {
         int time = Integer.parseInt(currentTime);

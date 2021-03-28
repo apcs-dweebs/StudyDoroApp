@@ -47,6 +47,8 @@ public class MainActivity extends AppCompatActivity {
             public void onTabReselected(TabLayout.Tab tab) {
             }
         });
+
+
     }
 
         /* super.onCreate(savedInstanceState);
@@ -71,5 +73,11 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(MainActivity.this, TimerSession.class);
         startActivity(i);
     }
+
+    public void launchCalendar(View v) {
+        Intent i = new Intent(MainActivity.this, Calendar.class);
+        startActivity(i);
+    }
+
 
 }

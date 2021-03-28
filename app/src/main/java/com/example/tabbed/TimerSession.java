@@ -2,6 +2,7 @@ package com.example.tabbed;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 
@@ -92,6 +93,7 @@ public class TimerSession extends AppCompatActivity {
             public void onFinish() {
                 mTimerRunning = false;
                 updateWatchInterface();
+                launchBreakActivity();
             }
         }.start();
         mTimerRunning = true;
@@ -188,8 +190,10 @@ public class TimerSession extends AppCompatActivity {
         }
     }
 
-
-
+public void launchBreakActivity(){
+        Intent i = new Intent(TimerSession.this, Breaktime.class);
+        startActivity(i);
+}
 
 /*
     public void startStop() {
