@@ -2,9 +2,20 @@
 A study app to manages your work and time utilizing the Pomodoro study system.
 
 How our timed study system works:
+
 Our team decided to create an app based off of animeDoro by Josh Chen. This works similar to pomodoro which has a 25 minute study session and a 5 minute break, but StudyDoro instead takes the concepts of animeDoro and has a 50 minute study session and a 20 minute optional break. This 20-minute break is for the user to watch any show with 20-minute episodes or any rewarding activities. With this being a relatively new concept, there are little to no timers that work similar to ours.
 
+App Features:
+- Setting goals
+- Accomplished goals
+- Study Reminders
+- Starting a study session
+- Suggested break
+- Google Calendar Integration
+- Accomplishments
+
 App Demo:
+
 Our app consists of 3 tabs.
 
 On the home tab, it shows reminders of  upcoming events that were tagged as the more important.
