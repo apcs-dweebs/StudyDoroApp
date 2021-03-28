@@ -94,4 +94,6 @@
         "when a user tries to pick up one of cards.\n\n"
     </string>
     <string name="select_session_goals">Select Session Goals</string>
+    <string name="times_up">Time\'s up!</string>
+    <string name="countdown">Countdown</string>
 </resources>

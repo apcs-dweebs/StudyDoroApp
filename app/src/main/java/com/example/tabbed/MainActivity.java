@@ -19,7 +19,6 @@ import android.view.View;
 import com.example.tabbed.ui.main.SectionsPagerAdapter;
 
 public class MainActivity extends AppCompatActivity {
-    //protected void onCreate(Bundle savedInstanceState) {
     TabLayout tabLayout;
     ViewPager viewPager;
 

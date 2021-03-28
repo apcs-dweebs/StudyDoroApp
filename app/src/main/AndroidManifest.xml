@@ -9,9 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TimerSession"
+        <activity android:name=".Timer"></activity>
+        <activity
+            android:name=".AddGoal"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".TimerSession"
             android:label="Start New Study Session"
-            android:parentActivityName=".MainActivity"></activity>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
