@@ -43,5 +43,12 @@
             android:layout_height="wrap_content"
             android:text="Research for english essay" />
 
+        <Button
+            android:id="@+id/allGoals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="displayList"
+            android:text="See all goals" />
+
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>

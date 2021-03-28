@@ -22,84 +22,130 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Goals extends Fragment {
-    int importance;
-    int time;
-    String word;
     //TextView goalsList = (TextView) getActivity().findViewById(R.id.goalsList);
 
     public Goals() {
-        this(0, 1, "none");
     }
 
-    public Goals(int imp, int tim, String theWord) {
-        importance = imp;
-        time = tim;
-        word = theWord;
-    }
-
-    public static ArrayList<Goals> goals = new ArrayList<Goals>();
-    public ArrayList<Boolean> ture = new ArrayList<Boolean>();
+    public static ArrayList<Goal> goals = new ArrayList<Goal>();
+    public ArrayList<Boolean> accomplishments = new ArrayList<Boolean>();
 
     Activity context;
 
-    //    @Nullable
-    // @Override
+    @Nullable
+    @Override
     public View onCreateView(@NonNull LayoutInflater inflater,
                              @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
         context = getActivity();
-        return inflater.inflate(R.layout.fragment_goals, container, false);
-
+       // return inflater.inflate(R.layout.fragment_goals, container, false);
+        View view = inflater.inflate(R.layout.fragment_goals, container, false);
+        view.findViewById(R.id.button).setOnClickListener(mListener);
+        view.findViewById(R.id.allGoals).setOnClickListener(mListener);
+return view;
     }
-
+   // Button button1 = view.findViewById(R.id.button);
+   // Button button2 = view.findViewById(R.id.allGoals);
    /*// public static List<Goals> getList() {
         return goals;
     }*/
-
-    public void onStart() {
+   private final View.OnClickListener mListener = new View.OnClickListener() {
+       public void onClick(View view) {
+           switch (view.getId()) {
+               case R.id.button:
+                   Intent intent = new Intent(context, AddGoal.class);
+                   //add data to the Intent object
+                   // intent.putExtra("text", "hiii");
+                   //start the second activity
+                   startActivity(intent);
+                   break;
+               case R.id.allGoals:
+                   Intent intent2 = new Intent(context, AllGoals.class);
+                   //add data to the Intent object
+                   // intent.putExtra("text", "hiii");
+                   //start the second activity
+                   startActivity(intent2);
+                   break;
+           }
+       }
+   };
+   /* public void onStart() {
         super.onStart();
         Button bt = (Button) context.findViewById(R.id.button);
+        Button bt2 = (Button) context.findViewById(R.id.allGoals);
+        bt.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                switch(view.getId()){
+                    case R.id.button:
+                        //create an Intent object
+                        Intent intent = new Intent(context, AddGoal.class);
+                        //add data to the Intent object
+                        // intent.putExtra("text", "hiii");
+                        //start the second activity
+                        startActivity(intent);
+                        break;
+                    case R.id.allGoals:
+                        //create an Intent object
+                        Intent intent2 = new Intent(context, AllGoals.class);
+                        //add data to the Intent object
+                        // intent.putExtra("text", "hiii");
+                        //start the second activity
+                        startActivity(intent2);
+                        break;
+                }
+
+            }
+
+        });
+    }*/
+
+
+  /*  public void onClick() {
+        super.onStart();
+        Button bt = (Button) context.findViewById(R.id.allGoals);
         bt.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 //create an Intent object
-                Intent intent = new Intent(context, AddGoal.class);
+                Intent intent = new Intent(context, AllGoals.class);
                 //add data to the Intent object
-                intent.putExtra("text", "hiii");
+                // intent.putExtra("text", "hiii");
                 //start the second activity
                 startActivity(intent);
             }
 
         });
-    }
+    }*/
 
     public void addNewGoal(View v) {
-        goals.add(new Goals(10, 10, "study for test"));
+        goals.add(new Goal("study for test", 10, 10));
         Intent i = new Intent(getActivity(), AddGoal.class);
         //  i.putExtra("goals arrayList", goals);
         startActivity(i);
     }
-    public void goToAllGoals(View v) {
+
+   /* public void goToAllGoals(View v) {
         Intent i = new Intent(getActivity(), AllGoals.class);
         startActivity(i);
-    }
+    }*/
 
-    public void finishedGoal(){
-        for (int i = 0; i < goals.size(); i++)
-        {
+  /*  public void finishedGoal() {
+        for (int i = 0; i < goals.size(); i++) {
             System.out.println(i + "# Is it finished? (true/false)");
-           // boolean ni = kbd.nextBoolean();
-            ture.add(false);
+            // boolean ni = kbd.nextBoolean();
+            accomplishments.add(false);
         }
-    }
+    }*/
   /*  public static void createGoal(String currentName, String currentTime, String currentImportance) {
         int time = Integer.parseInt(currentTime);
         int importance = Integer.parseInt(currentImportance);
         goals.add(new Goals(importance, time, currentName));
-    }
+    }*/
    /* public void displayList(View v){
+        TextView goalsList = (TextView) getActivity().findViewById(R.id.goalsList);
         for(int i = 0; i < goals.size(); i++){
-            String currentGoal = goals.get(i).word;
-            goalsList.setText(Integer.parseInt(currentGoal));
+            String currentGoal = goals.get(i).getWord();
+            String goalss = goalsList +"\n"+ currentGoal;
+            goalsList.setText(goalss);
         }
     }*/
 

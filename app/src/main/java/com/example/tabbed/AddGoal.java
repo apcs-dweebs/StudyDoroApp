@@ -12,8 +12,8 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-import static com.example.tabbed.Goals.*;
 import static com.example.tabbed.Goals.goals;
+
 
 public class AddGoal extends AppCompatActivity {
     //TextView goalsList = findViewById(R.id.goalsList);
@@ -37,7 +37,7 @@ public class AddGoal extends AppCompatActivity {
         Toast.makeText(AddGoal.this, "Goal Added", Toast.LENGTH_SHORT).show();
         int time = Integer.parseInt(currentTime);
         int importance = Integer.parseInt(currentImportance);
-        goals.add(new Goals(importance, time, currentName));
+        goals.add(new Goal(currentName, time, importance));
 
     }
 

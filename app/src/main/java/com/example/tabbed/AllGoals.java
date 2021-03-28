@@ -7,16 +7,33 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
 
-public class AllGoals extends FragmentActivity {
-    private static final String TAG = "MainActivity";
+import static com.example.tabbed.Goals.goals;
+
+public class AllGoals extends AppCompatActivity {
+  //  private static final String TAG = "MainActivity";
+  //TextView goalsList = findViewById(R.id.goalsList);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_all_goals);
         setTitle("all goals");
+       // displayList();
     }
+
+   /* public void displayList(){
+        for(int i = 0; i < goals.size(); i++){
+            String currentGoal = goals.get(i).getWord();
+            String goalss = goalsList +"\n"+ currentGoal;
+            goalsList.setText(goalss);
+        }
+    }*/
+
+
+
 
     /*@Override
     public boolean onCreateOptionsMenu(Menu menu) {
