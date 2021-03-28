@@ -93,7 +93,18 @@
         "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
         "when a user tries to pick up one of cards.\n\n"
     </string>
-    <string name="select_session_goals">Select Session Goals</string>
+    <string name="select_session_goals">Session Goals</string>
     <string name="times_up">Time\'s up!</string>
     <string name="countdown">Countdown</string>
+    <string name="hours_studying">You\'ve Spent 4 hours and 20 minutes studying this week!</string>
+    <string name="goals_accomplished">You\'ve accomplished 6/9 of your weekly goals!</string>
+    <string name="break_header">
+        You\'ve achieved a lot! \n
+        Heres some things you can do on your break:</string>
+    <string name="breakList">
+        -Watch a show\n
+        -Eat a snack\n
+        -Take a walk\n
+    </string>
+
 </resources>
