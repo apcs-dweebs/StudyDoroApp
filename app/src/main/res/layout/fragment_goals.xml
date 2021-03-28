@@ -24,5 +24,24 @@
             android:layout_height="wrap_content"
             android:text="Your Goals for This Week"
             android:textSize="24sp" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Study for math test" />
+
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Finish chem project" />
+
+        <CheckBox
+            android:id="@+id/checkBox4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Research for english essay" />
+
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>
