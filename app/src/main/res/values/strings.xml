@@ -2,7 +2,7 @@
     <string name="app_name">StudyDoro</string>
     <string name="tab_1">Home</string>
     <string name="tab_2">Goals</string>
-    <string name="tab_3">Accomplishments</string>
+    <string name="tab_3">Completed</string>
     <string name="timer">5:00</string>
     <string name="large_text">
         "Material is the metaphor.\n\n"

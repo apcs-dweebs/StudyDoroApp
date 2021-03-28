@@ -29,7 +29,7 @@ public class TimerSession extends AppCompatActivity {
     private long mTimeLeftInMillis;
     private long mEndTime;
 
-
+//Todo: add the default value as 50 minutes
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,7 +38,7 @@ public class TimerSession extends AppCompatActivity {
         mEditTextInput = findViewById(R.id.time_header);
         mTextViewCountDown = findViewById(R.id.countdown);
         mButtonSet = findViewById(R.id.set_timer);
-        mButtonStartPause = findViewById(R.id.countdownBtn);
+        mButtonStartPause = findViewById(R.id.breakCountdownBtn);
         mButtonReset = findViewById(R.id.resetBtn);
         mButtonSet.setOnClickListener(new View.OnClickListener() {
             @Override
